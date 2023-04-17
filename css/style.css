@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "merriweather";
+    src: url(assets/fontesPersonalizadas/merriweather/Merriweather-Regular.otf);
+}
+
+*{
+    font-family: merriweather;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(25deg,#303030,#f3f3c3,#303030);
+    background-attachment: fixed;
+}
+
+#container{
+    display: flex;
+}
+
+#conteudoBanner{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #303030;
+
+}
+
+#conteudoBanner div{
+    max-width: 40em;
+}
+#conteudoBanner h1 {
+    font-size: 38px;
+}
+
+#conteudoBanner p {
+    font-size: 24px;
+}
+
+
+#conteudoFormulario{
+    margin: 2em auto;
+    color: #303030;
+}
+
+/* Formatação do formulario */
+form{
+    margin: auto 1em;
+    display: grid;
+    justify-content: center;
+    max-width:fit-content;
+    padding: 1em;
+}
+
+.input-grupo{
+    display: flex;
+    flex-direction:column;
+    margin: 5px 1em;
+    max-width: fit-content;
+    font-size: 20px;
+}
+
+input, select{
+    width: 200px;
+    height: 2em;
+    border-radius: 5px;
+    border: 1px solid #303030;
+}
+.input-grupo-numero{
+    display: flex;
+    flex-direction:column;
+    margin: 5px 1em;
+    max-width: fit-content;
+    font-size: 20px;
+    margin-left: -1em;
+}
+#numero {
+    width: 4em;
+}
+
+#area{
+    width: 4em;
+}
+#imagem{
+    width: 100%;
+}
+
+input[type='file']{
+    display: none;    
+}
+
+#imagem label{
+    background-color: #4158d0;
+    border-radius: 5px;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 2px 15px;
+    border: 1px solid #4158d0;
+}
+
+#imagem label:hover{
+    background-color: #f1f1f1;
+    color: #4158d0;
+}
+
+button{
+    margin: 5px auto;
+    background-color: #303030;
+    border-radius: 5px;
+    color: #f1f1f1;
+    cursor: pointer;    
+    padding: 6px 20px;
+    font-size: 18px;
+}
+button:hover{
+    background-color: #f3f3c3;
+    color: #303030;
+
+}
+
+
+
+
+
+
+/* Media Queries*/
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) { 
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #conteudoFormulario{
+        margin: auto;
+        color: #303030;
+
+    }
+
+
+    
+    #conteudoBanner div{
+        max-width: 20em;
+    }
+
+    #conteudoBanner p {
+        font-size: 18px;
+    }
+
+    
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #conteudoFormulario{
+        margin: auto;
+        color: #303030;
+
+    }
+
+
+    #conteudoBanner div{
+        max-width: 25em;
+    }
+
+
+
+
+
+
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+
+}
+

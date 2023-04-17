@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta required name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Cadastro de Imóvel</title>
+    </head>
+    <body>
+
+        <!-- 
+            Rua; Num
+            CEP
+            Nome do proprietario
+            Area(m²)
+            Tipo do imovel (casa,prédio,...)
+        -->
+        <div id='container'>
+            <div id="conteudoBanner">
+                <div>
+                    <h1>
+                        Seja bem vindo
+                    </h1>
+                    <p>
+                        Preencha o formulario de cadastro para registrar o seu imóvel
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="conteudoFormulario">
+
+                <form id="form" >
+                    <div class="input-grupo"> <!-- Nome do Proprietario -->
+                        <label for="nomeProprietario"> Nome do Proprietario </label>
+                        <input  type="text" required name="nomeProprietario" id="nomeProprietario" placeholder="Informe o nome do proprietario" >
+                    </div>
+
+                    <div class="input-grupo"> <!-- CEP -->
+                        <label for="cep">CEP</label>
+                        <input type="text" required name="cep" id="cep" placeholder="Informe o CEP do imóvel" maxlength="8">
+                    </div>
+
+                    <div style="display:flex;"> <!-- Endereço -->
+                        <div class="input-grupo">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" required name="endereco" id="endereco" 
+                            placeholder="Informe o endereço do imóvel">
+                        </div>
+
+                        <span class="input-grupo-numero"> <!-- Numero-->
+                            <label for="numero">Nº</label>
+                            <input type="text" required name="numero" id="numero" maxlength="5">
+                        </span>
+                    </div>
+
+                    <div class="input-grupo"> <!-- Tipo do imóvel -->
+                        <label for="tipoImovel">Tipo imóvel</label>
+                        <select required name="tipoImovel" id="tipoImovel">
+                            <option value="selecione">Selecione</option>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="terreno">Terreno</option>
+                        </select>
+                    </div>
+
+                    <div class="input-grupo"> <!-- Área -->
+                        <label for="area">Área(m²)</label>
+                        <input type="text" required name="area" id="area" placeholder="Área" maxlength="5">
+                    </div>
+
+                    <div class="input-grupo" id="imagem"> <!-- Imagens do imóvel-->
+                        <label for="imagens">Foto do imóvel
+                            <input type="file" required name="imagens" id="imagens">
+                        </label>
+                    </div>
+
+                    <button type="submit"> <!-- Botão de registro -->
+                        Registrar Imóvel
+                    </button>
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        
+    </body>
+</html>
