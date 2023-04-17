@@ -9,13 +9,6 @@
     </head>
     <body>
 
-        <!-- 
-            Rua; Num
-            CEP
-            Nome do proprietario
-            Area(m²)
-            Tipo do imovel (casa,prédio,...)
-        -->
         <div id='container'>
             <div id="conteudoBanner">
                 <div>
@@ -50,11 +43,17 @@
                             placeholder="Endereço do imóvel">
                         </div>
 
-                        <span class="input-grupo-numero"> <!-- Numero-->
+                        <span class="input-grupo-label"> <!-- Numero-->
                             <label for="numero">Nº</label>
                             <input type="text" required name="numero" id="numero" maxlength="5" placeholder="Numero">
                         </span>
                     </div>
+
+                    <div class="input-grupo"> <!-- Cidade -->
+                        <label for="cidade">Cidade</label>
+                        <input type="text" required name="cidade" id="cidade" placeholder="Cidade do imóvel" maxlength="30">
+                    </div>
+
 
                     <div class="input-grupo"> <!-- Tipo do imóvel -->
                         <label for="tipoImovel">Tipo imóvel</label>
@@ -66,10 +65,23 @@
                         </select>
                     </div>
 
-                    <div class="input-grupo"> <!-- Área -->
-                        <label for="area">Área(m²)</label>
-                        <input type="text" required name="area" id="area" placeholder="Área" maxlength="5">
+                    <div style="display:flex;"> <!-- Área -->
+                        <div class="input-grupo">
+                            <label for="valor">Valor do imovel</label>
+                            <input type="text" required name="valor" id="valor" placeholder="Valor do Imóvel" maxlength="5">
+                            </div>
+
+                        <span class="input-grupo-label"> <!-- Valor-->
+                            <label for="area">Área(m²)</label>
+                            <input type="text" required name="area" id="area" placeholder="Área" maxlength="5">
+                        </span>
                     </div>
+
+
+
+
+
+
 
                     <div class="input-grupo" id="imagem"> <!-- Imagens do imóvel-->
                         <label for="imagens">Foto do imóvel

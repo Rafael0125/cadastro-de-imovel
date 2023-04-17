@@ -11,8 +11,8 @@
 }
 
 body{
-    background: linear-gradient(25deg,#303030,#f3f3c3,#303030);
-    background-attachment: fixed;
+    background: #f3f3c3;
+
 }
 
 #container{
@@ -68,7 +68,7 @@ input, select{
     border-radius: 5px;
     border: 1px solid #303030;
 }
-.input-grupo-numero{
+.input-grupo-label{
     display: flex;
     flex-direction:column;
     margin: 5px 1em;
