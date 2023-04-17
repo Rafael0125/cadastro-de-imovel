@@ -1,6 +1,6 @@
 @font-face {
     font-family: "merriweather";
-    src: url(assets/fontesPersonalizadas/merriweather/Merriweather-Regular.otf);
+    src: url(../assets/fontesPersonalizadas/merriweather/Merriweather-Regular.otf);
 }
 
 *{
@@ -59,7 +59,7 @@ form{
     flex-direction:column;
     margin: 5px 1em;
     max-width: fit-content;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 input, select{
@@ -73,7 +73,7 @@ input, select{
     flex-direction:column;
     margin: 5px 1em;
     max-width: fit-content;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: -1em;
 }
 #numero {
@@ -136,17 +136,14 @@ button:hover{
     #conteudoFormulario{
         margin: auto;
         color: #303030;
-
     }
 
-
-    
     #conteudoBanner div{
-        max-width: 20em;
+        max-width: 18em;
     }
 
     #conteudoBanner p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     
@@ -156,18 +153,22 @@ button:hover{
 @media (min-width: 576px) and (max-width: 767.98px) {
     #container{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
     }
     #conteudoFormulario{
         margin: auto;
         color: #303030;
-
     }
-
 
     #conteudoBanner div{
-        max-width: 25em;
+        max-width: 20em;
     }
+
+    #conteudoBanner p {
+        font-size: 16px;
+    }
+
 
 
 
