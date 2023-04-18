@@ -1,13 +1,6 @@
-@font-face {
-    font-family: "merriweather";
-    src: url(../assets/fontesPersonalizadas/merriweather/Merriweather-Regular.otf);
-}
-
 *{
-    font-family: merriweather;
     margin: 0;
     padding: 0;
-
 }
 
 body{
